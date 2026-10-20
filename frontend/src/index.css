@@ -1,0 +1,23 @@
+/* 1. Zera margens, paddings e define o cálculo de tamanho universal */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Força botões e inputs a herdarem a fonte e cor da página */
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 3. Garante que mídias não estourem o container no mobile */
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
